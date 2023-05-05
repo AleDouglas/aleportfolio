@@ -1,0 +1,29 @@
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top: 3%">
+
+    <div class="rodape">
+        <div class="rodapeContato">
+            <h2>Contato</h2>
+            <p>Email: xand.douglass@gmail.com</p>
+            <p>Telefone: (79) 99683-8702</p>
+            <div class="menuSocial">
+                <a href="https://github.com/AleDouglas/">
+                    <img src="{% static 'images/github.svg' %}" alt="">
+                </a>
+                <a href="https://www.instagram.com/xand_douglas/">
+                    <img src="{% static 'images/instagram.svg' %}" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/alexandre-douglas-529670213/">
+                    <img src="{% static 'images/linkedin.svg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="rodapeLogo">
+            <h1>AleDouglas</h1>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

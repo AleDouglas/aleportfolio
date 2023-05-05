@@ -1,0 +1,27 @@
+{% load static %}
+{% load blog_extras %}
+{% block content %}
+<div class="container" style="margin-top: 3%">
+    <div class="categoria" id="projetos">
+        <div class="titulo">
+            <h1>Exemplos de projetos</h1>
+        </div>
+
+        <div class="projetosLinks">
+            {% for p in projetos %}
+            <div class="card">
+                <details>
+                    <summary class="cardTitulo">
+                        <p>{{ p.titulo }}</p>
+                        <img src="{% static 'images/arrow.svg' %}" alt="">
+                    </summary>
+                    <div class="cardConteudo">
+                        {{ p.conteudo|convert_markdown|safe }}
+                    </div>
+                </details>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

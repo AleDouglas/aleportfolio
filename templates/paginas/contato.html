@@ -1,0 +1,23 @@
+{% load static %}
+
+{% block content %}
+<div class="container backgroundUm" style="margin-top: 3%">
+    <div class="categoria" id="contato">
+        <div class="titulo">
+            <h1>Contato</h1>
+            <p>- Envie sua dúvida, sugestões e até mesmo requisições para trabalho -</p>
+        </div>
+
+        <div class="contato">
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <div style="margin-top: 15px;align-self: center;">
+                    <button class="btnEnviar" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

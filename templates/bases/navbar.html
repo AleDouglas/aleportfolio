@@ -1,0 +1,39 @@
+{% load static %}
+{% block content %}
+
+
+<button class="toggle" onclick="toggleActive()" hidden>
+    <img src="{% static 'images/toggle.svg' %}" alt="">
+</button>
+
+<header>
+    <!-- Posicionamento da Logo -->
+    <div class="logo">
+        <a href="">AleDouglas</a>
+    </div>
+    <!-- Opções -->
+    <div class="menuOp">
+        <a href="#sobremim">Inicio</a>
+        <a href="#sobremim">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contato">Contato</a>
+    </div>
+    <!-- Link para redes sociais -->
+    <div class="menuSocial">
+        <a href="https://github.com/AleDouglas/">
+            <img src="{% static 'images/github.svg' %}" alt="">
+        </a>
+        <a href="https://www.instagram.com/xand_douglas/">
+            <img src="{% static 'images/instagram.svg' %}" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/alexandre-douglas-529670213/">
+            <img src="{% static 'images/linkedin.svg' %}" alt="">
+        </a>
+    </div>
+
+</header>
+
+
+{% endblock content %}

@@ -1,0 +1,39 @@
+{% load static %}
+
+{% block content %}
+<div class="container backgroundUm">
+    <div class="Sobremim backgroundUm" id="sobremim">
+        <div class="perfil">
+            <img src="{% static 'images/perfil.png' %}" alt="">
+        </div>
+        <div class="textoSobremim">
+            <h1>Eu sou Alexandre Douglas,</h1>
+            <h1>desenvolvedor Back End.</h1>
+            <p>Olá, meu nome é Alexandre Douglas, sou estudante de Ciência da Computação pela Universidade Federal de Sergipe.
+            Como estudante de ciência da computação, tenho grande interesse em me tornar um desenvolvedor backend, além de ter bastante interesse em FullStack.
+            Sinto que tenho a aptidão necessária para essa área e estou empenhado em adquirir mais conhecimento e habilidades para ser um profissional de sucesso.</p>
+            <p>Ao longo da minha jornada acadêmica, tenho me dedicado a aprender sobre desenvolvimento web, banco de dados, linguagens de programação, sistemas operacionais e redes de computadores. Acredito que essas habilidades são fundamentais para me tornar um desenvolvedor backend de destaque.</p>
+
+            <p>Com base em minhas habilidades e experiência, acredito que posso ser uma valiosa adição à sua equipe de desenvolvimento. Estou sempre disposto a aprender e crescer profissionalmente, e estou animado para trabalhar em projetos desafiadores que possam contribuir para o sucesso de sua empresa.</p>
+            <h3>PRINCIPAIS LINGUAGENS</h3>
+            <div class="linguagens">
+                <img src="{% static 'images/python.svg'%}" alt="Python">
+                <img src="{% static 'images/postgresql.svg'%}" alt="PostgreSQL">
+                <img src="{% static 'images/c++.svg'%}" alt="C++">
+                <img src="{% static 'images/c.svg'%}" alt="C">
+            </div>
+
+            <h3>DOMINO TAMBÉM</h3>
+            <div class="linguagens">
+                <img src="{% static 'images/JavaScript.svg'%}" alt="JavaScript">
+                <img src="{% static 'images/html.svg'%}" alt="HTML">
+                <img src="{% static 'images/css.svg'%}" alt="CSS">
+                <img src="{% static 'images/github.svg'%}" alt="GITHUB">
+            </div>
+            <div class="linguagens">
+                <img src="{% static 'images/django.svg'%}" alt="DJANGO">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --global-corUm: #DB2EF2;
+    --global-corDois: #220859;
+    --global-corTres: #190840;
+    --global-corQuatro: #121126; /* Background */
+    --global-corCinco: #26A646;
+}
+
+body{
+    background-color: var(--global-corQuatro);
+}
+
+/* definindo backgrounds */
+
+.backgroundUm{
+    background-color: var(--global-corTres);
+}
+.backgroundDois{
+    background-color: var(--global-corDois);
+}
+
+/* Container */
+
+.container{
+    padding: 0% 15% 0% 15%;
+}
+
+
+/* Mensagem de sucesso */
+.msg h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+/* Sobremim */
+.Sobremim{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+
+}
+
+.perfil{
+    margin-right: 5%;
+}
+
+.perfil img{
+    border-radius: 100px;
+    height: 600px;
+}
+
+.textoSobremim{
+    color: white;
+}
+
+.textoSobremim h1{
+    font-size: 48px;
+    color: fffafa;
+}
+
+.textoSobremim p{
+    color: #cccccc;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.textoSobremim h3{
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.linguagens{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.linguagens img{
+    max-height: 48px;
+    transition: .5s;
+}
+.linguagens img:hover{
+    transform: scale(1.2);
+}
+
+
+/* Categorias título */
+.categoria{
+    padding: 5%;
+    color: white;
+}
+
+.categoria .titulo{
+    text-align: center;
+}
+
+.categoria h1{
+    letter-spacing: 2px;
+    font-size: 48px;
+    text-align-last: center;
+}
+
+
+/* Portfolio */
+.portfolioLinks{
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    text-align-last: center;
+}
+
+.portfolioLinks a{
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 15px;
+    text-decoration: none;
+    transition: .5s;
+    border-radius: 50px;
+}
+
+
+.portfolioLinks a:hover{
+    color: black;
+    letter-spacing: 3px;
+    background-color: var(--global-corCinco);
+}
+
+.card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
+/* Certificados */
+.grade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grade img{
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 350px;
+    margin: 15px;
+    transition: .5s;
+}
+
+.grade img:hover{
+    transform: scale(1.1);
+}
+
+/* Contato */
+.contato form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+label{
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+input{
+    font-size: 18px;
+    height: 45px;
+}
+
+textarea{
+    padding: 2px;
+    font-size: 18px;
+}
+.btnEnviar{
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .5s;
+}
+
+.btnEnviar:hover{
+    color: black;
+    letter-spacing: 3px;
+    background-color: var(--global-corCinco);
+
+}
+@media screen and (max-width: 1000px) {
+
+    .container{
+        padding: 0% 0% 0% 0%;
+    }
+    .Sobremim{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .perfil{
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .perfil img{
+        height: 300px;
+    }
+
+    .portfolioLinks{
+        flex-direction: column;
+    }
+
+    .grade{
+        align-items: center;
+        flex-direction: column;
+    }
+
+}

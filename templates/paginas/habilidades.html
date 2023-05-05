@@ -1,0 +1,85 @@
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top: 3%">
+    <div class="categoria" id="habilidades">
+        <div class="titulo">
+            <h1>Principais Habilidades</h1>
+            <p>- Uma pequena noção das habilidades na qual domino -</p>
+        </div>
+
+        <div class="habilidades">
+
+            <div class="habilidadeGrade">
+                <h5>Português</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '12345' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                </div>
+                <h5>Inglês</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '123' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                    <img src="{% static 'images/star_black.svg' %}" alt="">
+                    <img src="{% static 'images/star_black.svg' %}" alt="">
+                </div>
+                <h5>Python</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '12345' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                </div>
+                <h5>C/C++</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '1234' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                    <img src="{% static 'images/star_black.svg' %}" alt="">
+                </div>
+                <h5>Banco de Dados</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '1234' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                    <img src="{% static 'images/star_black.svg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="habilidadeGrade">
+                <h5>Django Framework</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '12345' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                </div>
+                <h5>Desenvolvimento Frontend</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '1234' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                    <img src="{% static 'images/star_black.svg' %}" alt="">
+                </div>
+                <h5>GitHub</h5>
+                <div class="habilidadeNivel">
+                    <p>Nível: </p>
+                    {% for star in '12345' %}
+                        <img src="{% static 'images/star.svg' %}" alt="">
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock content %}

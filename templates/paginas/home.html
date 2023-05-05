@@ -1,0 +1,23 @@
+{% extends 'bases/_base.html' %}
+{% load static %} 
+
+
+
+{% block content %}
+
+
+<div class="container msg">
+    {% if messages %}
+            {% for message in messages %}
+            <h1>{{ message }}</p>
+            {% endfor %}
+    {% endif %}
+</div>
+{% include 'paginas/sobremim.html' %}
+{% include 'paginas/habilidades.html' %}
+{% include 'paginas/projetos.html' %}
+{% include 'paginas/certificados.html' %}
+{% include 'paginas/contato.html' %}
+
+{% include 'paginas/rodape.html' %}
+{% endblock content %}
